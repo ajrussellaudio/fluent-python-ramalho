@@ -1,3 +1,5 @@
+from math import sqrt
+
 class Vector:
     def __init__(self, x, y):
         self.x = x
@@ -10,3 +12,6 @@ class Vector:
         x = self.x + other.x
         y = self.y + other.y
         return Vector(x, y)
+
+    def __abs__(self):
+        return sqrt(self.x ** 2 + self.y ** 2)
