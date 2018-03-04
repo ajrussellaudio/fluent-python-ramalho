@@ -13,5 +13,9 @@ class VectorTest(unittest.TestCase):
     def test_absolute(self):
         self.assertEqual(5.0, abs(Vector(3, 4)))
 
+    def test_multiplication(self):
+        v = Vector(3, 4)
+        self.assertEqual(Vector(9, 12), v * 3)
+
 if __name__ == '__main__':
     unittest.main()

@@ -15,3 +15,6 @@ class Vector:
 
     def __abs__(self):
         return sqrt(self.x ** 2 + self.y ** 2)
+
+    def __mul__(self, scalar):
+        return Vector(self.x * scalar, self.y * scalar)
